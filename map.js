@@ -4,16 +4,24 @@
  */
 
 // Using a for loop
-
+let nums = [1, 2, 3, 4, 5]
+let results = [];
+for (let num of nums) {
+    results.push(num * 2)
+}
+console.log(results)
 
 // Using map()
-
-
-// Simplified w/ map()
+const multbyTwo = (num) => {
+    return num * 2;
+}
+const mapResults = nums.map(multbyTwo);
+console.log(mapResults)
 
 
 // Simplfied w/ map() + arrow function
-
+const mapResultsSimple = nums.map(num => num * 2)
+console.log(mapResultsSimple)
 
 // With objects:
 const students = [
